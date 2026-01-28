@@ -1,0 +1,13 @@
+pandas
+numpy
+scikit-learn
+requests
+snscrape
+praw
+python-dotenv
+tqdm
+textblob
+nltk
+matplotlib
+seaborn
+joblib
