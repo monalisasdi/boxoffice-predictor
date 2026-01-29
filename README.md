@@ -1,13 +1,16 @@
-# 1. Crée un nouvel environnement Python 3.11
+# Box Office Predictor
+Predicting Movie Box Office Success using TMDB + Reddit + Machine Learning
+
+## 1. Create a new Python 3.11 environment
 conda create -n boxoffice-env python=3.11
 
-# 2. Active l’environnement
+## 2. Activate the environment
 conda activate boxoffice-env
 
-# 3. Installe les librairies nécessaires
+## 3. Install required libraries
 pip install pandas snscrape
 
-# Box Office Predictor  
+## Box Office Predictor  
 Predicting Movie Box Office Success using TMDB + Reddit + Machine Learning
 
 This project predicts a movie’s box office success by combining TMDB metadata, Reddit social signals, and a Random Forest machine learning model.
@@ -19,9 +22,7 @@ It automates:
 - Model training
 - Automated prediction for any movie title
 
----
-
-## 🚀 Features
+### Features
 
 - TMDB movie metadata
 - Reddit hype & engagement signals
@@ -35,7 +36,7 @@ It automates:
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ### 1. Create environment (recommended)
 
@@ -65,12 +66,12 @@ Output:
 Predicted success score
 Confidence estimate
 
-Model
+### Model
 Algorithm: Random Forest
 Input: Movie + Reddit features
 Output: Box office success prediction
 
-Project Objective : 
+### Project Objective : 
 This project explores how online hype, audience sentiment, and movie metadata can help predict commercial movie success, offering insights for:
 Studios
 Marketing teams
