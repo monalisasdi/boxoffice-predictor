@@ -1,37 +1,38 @@
-Box Office Predictor
+# Box Office Predictor
 
 Predicting Movie Box Office Success using TMDB + Reddit + Machine Learning
 
 This project predicts the box office success of movies by combining TMDB metadata, Reddit social signals, and a Random Forest machine learning model.
 
-Installation
-Prerequisites
+## Installation
+### Prerequisites
 Python 3.11 or higher.
 Conda (for environment management) or pip.
 TMDB API key: You can get a TMDB API key by signing up on TMDB
 .
 Reddit API key: For fetching Reddit data (see fetch_reddit_posts.py).
 
-Installation Steps
+### Installation Steps
 
-Clone this repository:
+**1. Clone this repository:**
 
 git clone https://github.com/monalisasdi/boxoffice-predictor.git
 cd boxoffice-predictor
 
-Create a Conda environment (recommended):
+**2.Create a Conda environment (recommended):**
 
 conda create -n boxoffice-env python=3.11
 conda activate boxoffice-env
 
-Install the dependencies:
+**3. Install the dependencies:**
 
 pip install -r requirements.txt
 
-Install dotenv (if needed for environment variable management):
+**4. Install dotenv (if needed for environment variable management):**
 
 pip install python-dotenv
-Preparing the Data
+
+**5. Preparing the Data**
 1. Download the movie dataset from Kaggle
 
 Download the TMDB Movies Dataset 2023 (930,000 movies) from this Kaggle link : https://www.kaggle.com/datasets/asaniczka/tmdb-movies-dataset-2023-930k-movies
@@ -80,7 +81,7 @@ python prepare_dataset.py
 
 This will create the films_ready.csv file, ready for analysis and prediction.
 
-Training the Model
+**6. Training the Model**
 
 Once the data is prepared, you can train the Random Forest model to predict movie box office success.
 
@@ -88,7 +89,7 @@ python train_model.py
 
 This will train the model and save the results in a model file (e.g., random_forest.pkl).
 
-Automatic Box Office Prediction
+**7. Automatic Box Office Prediction**
 
 Once the model is trained, you can predict the box office success of a movie automatically using its title. Run predict_auto.py to enter a movie title and get a prediction.
 
@@ -105,7 +106,7 @@ Predicted Success Score: 0.85
 Confidence Estimate: 0.90
 Project Structure
 
-The project is structured as follows:
+## The project is structured as follows:
 
 BoxOfficePredictor/
 ├── analysis/
@@ -130,7 +131,8 @@ BoxOfficePredictor/
 ├── merge_datasets.py        # Merges the datasets
 ├── requirements.txt         # List of Python dependencies
 └── README.md                # Project documentation
-Conclusion
+
+## Conclusion
 
 This project explores how Reddit social signals and TMDB metadata can be used to predict a movie's commercial success. It offers valuable insights for studios, marketing teams, distributors, and entertainment analysts.
 
