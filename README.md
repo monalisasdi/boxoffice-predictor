@@ -6,33 +6,32 @@ This project predicts the box office success of movies by combining TMDB metadat
 
 ## Installation
 ### Prerequisites
-Python 3.11 or higher.
-Conda (for environment management) or pip.
-TMDB API key: You can get a TMDB API key by signing up on TMDB
-.
+Python 3.11 or higher.  
+Conda (for environment management) or pip.  
+TMDB API key: You can get a TMDB API key by signing up on TMDB.  
 Reddit API key: For fetching Reddit data (see fetch_reddit_posts.py).
 
-### Installation Steps
+### **Installation Steps**
 
-**1. Clone this repository:**
+### Clone this repository:**
 
-git clone https://github.com/monalisasdi/boxoffice-predictor.git
+git clone https://github.com/monalisasdi/boxoffice-predictor.git  
 cd boxoffice-predictor
 
-**2.Create a Conda environment (recommended):**
+### Create a Conda environment (recommended):**
 
-conda create -n boxoffice-env python=3.11
+conda create -n boxoffice-env python=3.11  
 conda activate boxoffice-env
 
-**3. Install the dependencies:**
+### Install the dependencies:**
 
 pip install -r requirements.txt
 
-**4. Install dotenv (if needed for environment variable management):**
+### Install dotenv (if needed for environment variable management):**
 
 pip install python-dotenv
 
-**5. Preparing the Data**
+### Preparing the Data**
 1. Download the movie dataset from Kaggle
 
 Download the TMDB Movies Dataset 2023 (930,000 movies) from this Kaggle link : https://www.kaggle.com/datasets/asaniczka/tmdb-movies-dataset-2023-930k-movies
@@ -81,7 +80,7 @@ python prepare_dataset.py
 
 This will create the films_ready.csv file, ready for analysis and prediction.
 
-**6. Training the Model**
+### Training the Model
 
 Once the data is prepared, you can train the Random Forest model to predict movie box office success.
 
@@ -89,7 +88,7 @@ python train_model.py
 
 This will train the model and save the results in a model file (e.g., random_forest.pkl).
 
-**7. Automatic Box Office Prediction**
+### Automatic Box Office Prediction
 
 Once the model is trained, you can predict the box office success of a movie automatically using its title. Run predict_auto.py to enter a movie title and get a prediction.
 
@@ -108,29 +107,29 @@ Project Structure
 
 ## The project is structured as follows:
 
-BoxOfficePredictor/
-├── analysis/
-│   ├── prepare_dataset.py  # Prepares the dataset
-│   ├── train_model.py      # Trains the model
-├── data/
-│   ├── films.csv           # Base movie dataset (to be downloaded from Kaggle)
-│   ├── films_50000.csv     # Sample of the first 50,000 movies
-│   ├── films_with_reddit.csv  # Movies enriched with Reddit data
-│   ├── films_merged.csv    # Merged data from films and Reddit
-│   ├── films_with_tmdb.csv # Movies enriched with TMDB reviews
-│   └── films_ready.csv     # Cleaned and prepared data for analysis
-├── models/
-│   ├── random_forest.pkl   # Random Forest model file
-├── reddit/
-│   ├── fetch_reddit_posts.py # Fetches Reddit posts for each movie
-│   ├── reddit_test.py         # Test Reddit functions
-├── .env                     # Environment variables (API keys)
-├── .gitignore               # Files to be ignored by Git
-├── predict_auto.py          # Auto-prediction for a movie title
-├── filtrer.py               # Filters and creates the movie sample
-├── merge_datasets.py        # Merges the datasets
-├── requirements.txt         # List of Python dependencies
-└── README.md                # Project documentation
+BoxOfficePredictor/  
+├── analysis/   
+│   ├── prepare_dataset.py  # Prepares the dataset  
+│   ├── train_model.py      # Trains the model  
+├── data/  
+│   ├── films.csv           # Base movie dataset (to be downloaded from Kaggle)  
+│   ├── films_50000.csv     # Sample of the first 50,000 movies  
+│   ├── films_with_reddit.csv  # Movies enriched with Reddit data  
+│   ├── films_merged.csv    # Merged data from films and Reddit  
+│   ├── films_with_tmdb.csv # Movies enriched with TMDB reviews  
+│   └── films_ready.csv     # Cleaned and prepared data for analysis  
+├── models/  
+│   ├── random_forest.pkl   # Random Forest model file  
+├── reddit/  
+│   ├── fetch_reddit_posts.py # Fetches Reddit posts for each movie  
+│   ├── reddit_test.py         # Test Reddit functions  
+├── .env                     # Environment variables (API keys)  
+├── .gitignore               # Files to be ignored by Git  
+├── predict_auto.py          # Auto-prediction for a movie title  
+├── filtrer.py               # Filters and creates the movie sample  
+├── merge_datasets.py        # Merges the datasets  
+├── requirements.txt         # List of Python dependencies  
+└── README.md                # Project documentation  
 
 ## Conclusion
 
