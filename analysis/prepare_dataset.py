@@ -4,7 +4,7 @@ from sklearn.preprocessing import MultiLabelBinarizer
 # Load enriched dataset
 df = pd.read_csv("data/films_with_tmdb.csv")
 
-print(f"🎬 Movies loaded: {len(df)}")
+print(f"Movies loaded: {len(df)}")
 
 # Numeric columns to convert
 cols_num = [

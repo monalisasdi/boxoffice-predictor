@@ -10,5 +10,5 @@ merged = pd.merge(films_base, films_reddit, on="title", how="inner")
 # Save merged result
 merged.to_csv("data/films_merged.csv", index=False)
 
-print("✅ Merge completed: data/films_merged.csv")
+print("Merge completed: data/films_merged.csv")
 print(f"Merged movies: {len(merged)}")

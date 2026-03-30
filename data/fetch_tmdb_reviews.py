@@ -60,6 +60,6 @@ df['tmdb_sentiment_score'] = tmdb_sentiments
 df['tmdb_avg_rating'] = tmdb_avg_ratings
 df['tmdb_review_count'] = tmdb_review_counts
 
-# 💾 Save enriched dataset
+# Save enriched dataset
 df.to_csv("data/films_with_tmdb.csv", index=False)
-print("✅ TMDB data successfully added: data/films_with_tmdb.csv")
+print("TMDB data successfully added: data/films_with_tmdb.csv")

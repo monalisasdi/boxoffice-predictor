@@ -72,7 +72,7 @@ def get_reddit_data(film_title, max_posts=30):
             volume += 1
             time.sleep(0.2)
     except Exception as e:
-        print(f"❌ Reddit error: {e}")
+        print(f"Reddit error: {e}")
     return (
         round(sum(sentiments) / len(sentiments), 3) if sentiments else 0,
         round(sum(upvotes) / len(upvotes), 1) if upvotes else 0,

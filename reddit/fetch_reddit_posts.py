@@ -11,7 +11,7 @@ reddit = praw.Reddit(
 )
 
 # Read movies dataset
-films = pd.read_csv("data/films_100000.csv").head(10000)
+films = pd.read_csv("data/films_500000.csv").head(10000)
 
 # Store results
 results = []
